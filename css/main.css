@@ -1,6 +1,11 @@
 /*
-Materialogue CSS
-Based on Bootstrap
+MATERIALOGUE
+is  Anne Grijzenhout
+    Sonya Hanson
+    Eachan Johnson
+    Jerome Ma
+
+Sign-up page CSS
 */
 
 * {
@@ -21,64 +26,109 @@ html {
 
 /* Fonts */
 h1, h2, h3 {
-    font-family: 'Source Code Pro', sans-serif;
-    color: rgba(255, 255, 255, 0.63);
+    font-family: sans-serif;
+    color: #000000;
+}
+
+h1 {
+    font-size: 10vmin;
+}
+
+h1 span {
+    font-size: 7vmin;
 }
 
 p {
-    font-family: sans-serif;
-    color: #ffffff;
+    font-family: serif;
+    color: #000000;
 }
 
-/* Title page */
-.container {
+/* Layout */
+.one-page {
+    position: absolute;
+    width: 100vw;
     height: 100vh;
-    width: 100vw;
-    background-color: rgba(69, 255, 0, 0.63);
+    overflow: hidden;
 }
 
-.site-title {
-    width: 100vw;
-    text-align: center;
-    font-size: 20vmin;
-    word-wrap: break-word;
-}
-
-.site-subtitle {
-    width: 100vw;
-    text-align: center;
-    font-size: 6vmin;
-    padding-bottom: 10vh;
-}
-
-.fp-text {
+.two-columns {
+    position: absolute;
     width: 50vw;
-    left: 24vw;
-    text-align: center;
+    height: 100vw;
+    top: 0vh;
 }
 
-.fp-link {
-    display: inline-block;
-    text-align: center;
-    width: 22vw;
+.page-title {
+    top: 2.1vh;
+    left: 2.1vw;
 }
 
-.fp-link:hover {
-    background-color: rgba(255, 255, 255, 0.53);
+.section-title {
+    position: relative;
+    top: 4.2vh;
+    left: 2.1vw;
+    font-size: 5vmin;
 }
 
-.fp-link a {
+.section-text {
+    position: relative;
+    top: 8.3vh;
+    left: 4.1vw;
+    font-size: 3vmin;
+}
+
+.col1 {
+    left: 0vw;
+    border-right: 1px dotted #000000;
+}
+
+.col2 {
+    left: 50vw;
+}
+
+.spacer-half {
+    height: 4.2%;
+    width: 100%;
+    background-color: transparent;
+}
+
+/* Navigation */
+.nav-menu {
+    position: relative;
+    width: 83.3%;
+    left: 8.3%;
+    list-style-type: none;
+}
+
+.menu-item {
+    display: block;
+    padding-top: 2.1%;
+    padding-bottom: 2.1%;
+    border-left: 4px solid transparent;
+}
+
+.menu-item:hover {
+    padding-left: 2.1%;
+    border-left: 4px solid #000000;
     color: #ff0000;
-    opacity: 0.6;
-    text-decoration: none;
+}
+.menu-item h3 {
+    font-size: 5vmin;
 }
 
-.fp-box {
-    width: 80vw;
-    left: 10vw;
-    background-color: rgba(255, 255, 255, 0.53);
+.menu-item:hover h3 {
+    color: #ff0000;
 }
 
-.cta {
-    text-align: center;
+/* Sections */
+#sci-stories, #not-ready, #these-people, #newsletter {
+    display: none;
+}
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0vh;
+    left: 0vw;
+    height: 2.1vh;
+    width: 100vw;
 }
