@@ -15,8 +15,15 @@ Sign-up page HTML.
 
     <!-- Stylesheets -->
     <link type="text/css"  rel="stylesheet" href="css/fonts.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic|PT+Sans+Narrow|Source+Code+Pro' rel='stylesheet' type='text/css'>
     <link type="text/css" rel="stylesheet" href="css/main.css" />
     <link type="text/css" rel="stylesheet" href="css/media-queries.css" />
+    <!--<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>-->
 
     <!-- Google Analytics -->
     <!--<script>
@@ -51,27 +58,29 @@ Sign-up page HTML.
 
     <!-- Splash screen -->
     <div class="one-page">
-        <div class="two-columns col1">
+        <div class="six-columns span-2">
             <div class="page-title">
-                <h1>Materialogue</h1>
+                <h1>Materialogue.</h1>
             </div>
             <div class="spacer-half"></div>
             <ul class="nav-menu">
+                <div class="head-space-12"></div>
                 <li class="menu-item" id="a-sci-stories">
-                    <h3><em>is</em> science stories of the human kind</h3>
+                    <h3>science stories of the human kind</h3>
                 </li>
-                <li class="menu-item" id="a-not-ready">
-                    <h3><em>is</em> not ready yet</h3>
-                </li>
+                <!--<li class="menu-item" id="a-not-ready">
+                    <h3>is <em>not ready yet</em></h3>
+                </li>-->
                 <li class="menu-item" id="a-these-people">
-                    <h3><em>is</em> these people</h3>
+                    <h3>us</h3>
                 </li>
                 <li class="menu-item" id="a-newsletter">
-                    <h3><em>is</em> a newsletter</h3>
+                    <h3>newsletter</h3>
                 </li>
             </ul>
         </div>
-        <div class="two-columns col2" id="sci-stories">
+        <div class="six-columns span-10" id="sci-stories">
+            <div class="head-space-6"></div>
             <div class="section-title">
                 <h2>Science. Humanized.</h2>
             </div>
@@ -80,7 +89,8 @@ Sign-up page HTML.
             </div>
         </div>
 
-        <div class="two-columns col2" id="not-ready">
+        <div class="six-columns span-10" id="not-ready">
+            <div class="head-space-6"></div>
             <div class="section-title">
                 <h2>Worth the wait. In gold.</h2>
             </div>
@@ -88,37 +98,70 @@ Sign-up page HTML.
                 <p>Blah2.</p>
             </div>
         </div>
-        <div class="two-columns col2" id="these-people">
+        <div class="six-columns span-10" id="these-people">
+            <div class="head-space-6"></div>
             <div class="section-title">
                 <h2>Apart. But together.</h2>
             </div>
             <div class="section-text">
-                <div class="two-by-two-container">
-                    <div class="two-by-two c11">
-                        <h3>Anne Grijzenhout</h3>
+                <div class="four-by-two-container">
+                    <div class="four-by-two c11">
                         <img alt-text="Anne Grijzenhout" src="http://greentreesarborcareinc.com/wp-content/uploads/2014/01/image-placeholder.jpg" />
                     </div>
-                    <div class="two-by-two c12">
-                        <h3>Sonya Hanson</h3>
+                    <div class="four-by-two c12">
+                        <h3>Anne Grijzenhout</h3>
+                        <p>Blah.</p>
+                    </div>
+                    <div class="four-by-two c13">
                         <img alt-text="Sonya Hanson" src="http://greentreesarborcareinc.com/wp-content/uploads/2014/01/image-placeholder.jpg" />
                     </div>
-                    <div class="two-by-two c21">
-                        <h3>Eachan Johnson</h3>
+                    <div class="four-by-two c14">
+                        <h3>Sonya Hanson</h3>
+                        <p>Blah.</p>
+                    </div>
+                    <div class="four-by-two c21">
                         <img alt-text="Eachan Johnson" src="http://greentreesarborcareinc.com/wp-content/uploads/2014/01/image-placeholder.jpg" />
                     </div>
-                    <div class="two-by-two c22">
-                        <h3>Jerome Ma</h3>
+                    <div class="four-by-two c22">
+                        <h3>Eachan Johnson</h3>
+                        <p>Blah.</p>
+                    </div>
+                    <div class="four-by-two c23">
                         <img alt-text="Jerome Ma" src="http://greentreesarborcareinc.com/wp-content/uploads/2014/01/image-placeholder.jpg" />
+                    </div>
+                    <div class="four-by-two c24">
+                        <h3>Jerome Ma</h3>
+                        <p>Blah.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="two-columns col2"  id="newsletter">
+        <div class="six-columns span-10"  id="newsletter">
+            <div class="head-space-6"></div>
             <div class="section-title">
                 <h2>Roll up. Read all about it.</h2>
             </div>
             <div class="section-text">
-                <p>Blah4.</p>
+                <p>
+                    <!-- Begin MailChimp Signup Form -->
+
+<div id="mc_embed_signup">
+    <form action="//materialogue.us10.list-manage.com/subscribe/post?u=e6dfcf5eafeaf437d93da9036&amp;id=b7d4861693" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+            <label for="mce-EMAIL">Subscribe to our mailing list:</label>
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;">
+                <input type="text" name="b_e6dfcf5eafeaf437d93da9036_b7d4861693" tabindex="-1" value="">
+            </div>
+            <div class="clear">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--End mc_embed_signup--></p>
             </div>
         </div>
     </div>

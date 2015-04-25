@@ -9,10 +9,11 @@ Sign-up page CSS
 */
 
 * {
-    position: relative;
+    position: static;
     padding: 0px;
     margin: 0px;
-    border: 0px;
+    /*border: 1px solid black;*/
+    background-color: transparent;
 }
 
 html, body {
@@ -26,41 +27,77 @@ html {
 
 /* Fonts */
 h1, h2, h3 {
-    font-family: sans-serif;
     color: #000000;
 }
 
 h1 {
-    font-size: 10vmin;
+    font-family: 'Source Code Pro', serif;
+    font-size: 15vmin;
+    width: 100%;
 }
 
 h1 span {
     font-size: 7vmin;
 }
 
+h2 {
+    font-family: 'PT Sans Narrow', serif;
+    font-size: 7vmin;
+     width: 100%;
+}
+
+h3 {
+    font-family: 'PT Sans Narrow', serif;
+    font-size: 4vmin;
+    width: 100%;
+}
+
 p {
-    font-family: serif;
+    font-family: 'Lora', serif;
     color: #000000;
+     width: 100%;
 }
 
 /* Layout */
 .one-page {
-    position: absolute;
+    position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
 
 .two-columns {
-    position: absolute;
     width: 50vw;
     height: 100vw;
     top: 0vh;
 }
 
+.three-columns {
+    width: 33.3vw;
+    height: 100vw;
+    top: 0vh;
+}
+
+.six-columns {
+    width: 16.6vw;
+    height: 100vw;
+    top: 0vh;
+}
+
+.head-space-6 {
+    height: 16.6vh;
+}
+
+.head-space-12 {
+    height: 8.3vh;
+}
+
+
 .page-title {
-    top: 2.1vh;
-    left: 2.1vw;
+    position: fixed;
+    top: 1px;
+    left: 1px;
+    /*border: 1px solid #000000;*/
 }
 
 .section-title {
@@ -77,14 +114,65 @@ p {
     font-size: 3vmin;
 }
 
-.col1 {
-    left: 0vw;
-    border-right: 1px dotted #000000;
+.span-1 {
+    width: 8.3vw;
     height: 100%;
 }
 
-.col2 {
-    left: 50vw;
+.span-2 {
+    width: 16.6vw;
+    height: 100%;
+}
+
+.span-3 {
+    width: 25vw;
+    height: 100%;
+}
+
+.span-4 {
+    width: 33.3vw;
+    height: 100%;
+}
+
+.span-5 {
+    width: 41.7vw;
+    height: 100%;
+}
+
+.span-6 {
+    width: 50vw;
+    height: 100%;
+}
+
+.span-7 {
+    width: 58.3vw;
+    height: 100%;
+}
+
+.span-8 {
+    width: 66.6vw;
+    height: 100%;
+}
+
+.span-9 {
+    width: 75vw;
+    height: 100%;
+}
+
+.span-10 {
+    position: absolute;
+    left: 16.6vw;
+    width: 83.3vw;
+    height: 100%;
+}
+
+.span-11 {
+    width: 91.7vw;
+    height: 100%;
+}
+
+.span-12 {
+    width: 100vw;
     height: 100%;
 }
 
@@ -94,41 +182,64 @@ p {
     background-color: transparent;
 }
 
-.two-by-two-container {
-    width: 83%;
-    height: 83vh;
+.four-by-two-container {
+    width: 75%;
+    height: 58.3vh;
 }
 
-.two-by-two {
+.four-by-two-container img {
+    width: 83.3%;
+}
+
+.four-by-two {
     position: absolute;
-    width: 50%;
+    width: 25%;
     height: 50%;
 }
 
-.two-by-two-container .c11 {
+.four-by-two-container .c11 {
     top: 0%;
     left: 0%;
 }
 
-.two-by-two-container .c12 {
+.four-by-two-container .c12 {
+    top: 0%;
+    left: 25%;
+}
+
+.four-by-two-container .c13 {
     top: 0%;
     left: 50%;
 }
 
-.two-by-two-container .c21 {
+.four-by-two-container .c14 {
+    top: 0%;
+    left: 75%;
+}
+
+.four-by-two-container .c21 {
     top: 50%;
     left: 0%;
 }
 
-.two-by-two-container .c22 {
+.four-by-two-container .c22 {
+    top: 50%;
+    left: 25%;
+}
+
+.four-by-two-container .c23 {
     top: 50%;
     left: 50%;
+}
+
+.four-by-two-container .c24 {
+    top: 50%;
+    left: 75%;
 }
 
 .two-by-two-container h3 {
-    text-align: center;
-}
 
+}
 
 
 /* Navigation */
@@ -151,16 +262,13 @@ p {
     border-left: 4px solid #000000;
     color: #ff0000;
 }
-.menu-item h3 {
-    font-size: 5vmin;
-}
 
 .menu-item:hover h3 {
     color: #ff0000;
 }
 
 /* Sections */
-#sci-stories, #not-ready, #these-people, #newsletter {
+#not-ready, #these-people, #newsletter {
     display: none;
 }
 /* Footer */
@@ -170,4 +278,36 @@ footer {
     left: 0vw;
     height: 2.1vh;
     width: 100vw;
+}
+
+/* Mailchimp */
+#mc_embed_signup_scroll {
+    padding: 3px;
+}
+
+input {
+    width: 50vw;
+    height: 4.2vh;
+    font-size: 3vmin;
+}
+
+label {
+    font-family: 'PT Sans Narrow', serif;
+    height: 4.2vh;
+}
+
+.button {
+    position: relative;
+    top: 4.1vh;
+    left: 16.6vw;
+    width: 8.3vw;
+    background-color: #000000;
+    color: #ffffff;
+    border: 0px;
+}
+
+.button:hover {
+    width: 8.3vw;
+    background-color: #ffffff;
+    color: #000000;
 }

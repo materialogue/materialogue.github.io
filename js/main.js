@@ -6,7 +6,9 @@ function menuHover(menuId) {
     var $menuItem = $('#' + menuId),
         $menuItems = $('.menu-item'),
         $menuTarget = $('#' + menuId.split('a-')[1]),
-        $sections = $('.col2');
+        $sections = $('.span-10');
+
+    //console.log('#' + menuId.split('a-')[1])
 
     if ( $menuTarget ) {
         //console.log(menuTarget);
@@ -29,6 +31,7 @@ function menuHover(menuId) {
 
 //// Main function - stringing it all together!
 function main() {
+    menuHover('a-sci-stories');
     $('.menu-item').mouseenter( function () {
         menuHover(this.id);
     });
