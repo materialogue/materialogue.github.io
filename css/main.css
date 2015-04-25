@@ -58,6 +58,15 @@ p {
      width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: #ff0000;
+}
+
+a:hover {
+    color: #000000;
+}
+
 /* Layout */
 .one-page {
     position: relative;
@@ -276,7 +285,7 @@ footer {
     position: fixed;
     bottom: 0vh;
     left: 0vw;
-    height: 2.1vh;
+    height: 3vh;
     width: 100vw;
 }
 

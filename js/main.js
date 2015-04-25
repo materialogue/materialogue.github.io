@@ -6,9 +6,11 @@ function menuHover(menuId) {
     var $menuItem = $('#' + menuId),
         $menuItems = $('.menu-item'),
         $menuTarget = $('#' + menuId.split('a-')[1]),
-        $sections = $('.span-10');
+        $sections = $('.span-10'),
+        $currentDisplay = $('.current-display');
 
     //console.log('#' + menuId.split('a-')[1])
+    //console.log($currentDisplay);
 
     if ( $menuTarget ) {
         //console.log(menuTarget);
@@ -20,8 +22,15 @@ function menuHover(menuId) {
             'border-left': '4px solid #000000',
             'padding-left': '2.1%'
         });
-        $sections.hide();
-        $menuTarget.fadeIn('fast');
+
+        if ( $menuTarget.hasClass('current-display') ) {
+            //
+        } else {
+            $currentDisplay.removeClass('current-display');
+            $sections.hide();
+            $menuTarget.fadeIn('fast');
+            $menuTarget.addClass('current-display');
+        }
     } else {
         //
     }
