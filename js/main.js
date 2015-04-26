@@ -1,3 +1,36 @@
+//// Front cover reveal
+
+// Cover callback
+function coverCallback2(){
+    var $cover = $('.cover');
+
+    $cover.animate({
+        'top': '100%',
+        'opacity': 0
+    }, 'slow');
+    setTimeout(function () {
+        $cover.hide();
+    }, 2000);
+}
+
+function coverCallback1(){
+    var $cover = $('.cover');
+
+    $cover.animate({
+        'top': '20%'
+    }, 'fast');
+
+    setTimeout(coverCallback2, 2000);
+}
+
+// Reveal page
+function coverReveal() {
+    var $cover = $('.cover');
+
+    $cover.show();
+    setTimeout(coverCallback1, 2000);
+}
+
 ////Menu items
 
 // Add hover callback
@@ -40,6 +73,7 @@ function menuHover(menuId) {
 
 //// Main function - stringing it all together!
 function main() {
+    coverReveal();
     menuHover('a-sci-stories');
     $('.menu-item').mouseenter( function () {
         menuHover(this.id);

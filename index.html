@@ -15,7 +15,7 @@ Sign-up page HTML.
 
     <!-- Stylesheets -->
     <link type="text/css"  rel="stylesheet" href="css/fonts.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic|PT+Sans+Narrow|Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="css/grid_layout.css" />
     <link type="text/css" rel="stylesheet" href="css/main.css" />
     <link type="text/css" rel="stylesheet" href="css/media-queries.css" />
     <!--<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
@@ -57,14 +57,14 @@ Sign-up page HTML.
 <body id="home">
 
     <!-- Splash screen -->
-    <div class="one-page">
-        <div class="six-columns span-2">
+    <div class="section group">
             <div class="page-title">
                 <h1>Materialogue.</h1>
             </div>
-            <div class="spacer-half"></div>
-            <ul class="nav-menu">
-                <div class="head-space-12"></div>
+        <div class="cover"><p>Science stories of the human kind</p></div>
+           <div class="span-2">
+            <ul class="nav-menu col span-2">
+                <div class="head-space-3"></div>
                 <li class="menu-item" id="a-sci-stories">
                     <h3>science stories of the human kind</h3>
                 </li>
@@ -79,18 +79,19 @@ Sign-up page HTML.
                 </li>
             </ul>
         </div>
-        <div class="six-columns span-10" id="sci-stories">
-            <div class="head-space-6"></div>
+        <div class="span-2 col"></div>
+        <div class="span-10 col page" id="sci-stories">
+            <div class="head-space-2"></div>
             <div class="section-title">
-                <h2>Science. Humanized.</h2>
+                <h2>Scroll up. Read all about it.</h2>
             </div>
             <div class="section-text">
                 <p>Blah1.</p>
             </div>
         </div>
 
-        <div class="six-columns span-10" id="not-ready">
-            <div class="head-space-6"></div>
+        <div class="span-10 col page" id="not-ready">
+            <div class="head-space-2"></div>
             <div class="section-title">
                 <h2>Worth the wait. In gold.</h2>
             </div>
@@ -98,48 +99,38 @@ Sign-up page HTML.
                 <p>Blah2.</p>
             </div>
         </div>
-        <div class="six-columns span-10" id="these-people">
-            <div class="head-space-6"></div>
+        <div class="span-10 col page" id="these-people">
+            <div class="head-space-2"></div>
             <div class="section-title">
-                <h2>Apart. But together.</h2>
+                <h2>Monkeys on typewriters.</h2>
             </div>
-            <div class="section-text">
-                <div class="four-by-two-container">
-                    <div class="four-by-two c11">
+                <div class="section group bio-block">
+                    <div class="col span-3">
                         <img alt-text="Anne Grijzenhout" src="http://greentreesarborcareinc.com/wp-content/uploads/2014/01/image-placeholder.jpg" />
-                    </div>
-                    <div class="four-by-two c12">
                         <h3>Anne Grijzenhout</h3>
                         <p><a href="">@annegrijzenhout</a></p>
                     </div>
-                    <div class="four-by-two c13">
+                    <div class="col span-3">
                         <img alt-text="Sonya Hanson" src="http://greentreesarborcareinc.com/wp-content/uploads/2014/01/image-placeholder.jpg" />
-                    </div>
-                    <div class="four-by-two c14">
                         <h3>Sonya Hanson</h3>
                         <p><a href="">@sonyahans</a></p>
                     </div>
-                    <div class="four-by-two c21">
+                    <div class="col span-3">
                         <img alt-text="Eachan Johnson" src="http://greentreesarborcareinc.com/wp-content/uploads/2014/01/image-placeholder.jpg" />
-                    </div>
-                    <div class="four-by-two c22">
                         <h3>Eachan Johnson</h3>
                         <p><a href="">@eachanjohnson</a></p>
                     </div>
-                    <div class="four-by-two c23">
+                    <div class="col span-3">
                         <img alt-text="Jerome Ma" src="http://greentreesarborcareinc.com/wp-content/uploads/2014/01/image-placeholder.jpg" />
-                    </div>
-                    <div class="four-by-two c24">
                         <h3>Jerome Ma</h3>
                         <p><a href="">@jeromema</a></p>
                     </div>
                 </div>
-            </div>
         </div>
-        <div class="six-columns span-10"  id="newsletter">
-            <div class="head-space-6"></div>
+        <div class="col span-10 page" id="newsletter">
+            <div class="head-space-2"></div>
             <div class="section-title">
-                <h2>Roll up. Read all about it.</h2>
+                <h2>Stay in touch.</h2>
             </div>
             <div class="section-text">
                 <p>
@@ -164,7 +155,7 @@ Sign-up page HTML.
 <!--End mc_embed_signup--></p>
             </div>
         </div>
-    </div>
+   </div>
 
     <!-- Footer -->
     <footer>
