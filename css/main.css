@@ -48,7 +48,7 @@ html {
 .cover p {
     width: 100%;
     position: relative;
-    top: 83.3%%;
+    top: 2.1%;
     left: 50%;
     text-transform: uppercase;
     font-size: 4vmin;
@@ -110,7 +110,15 @@ html {
     margin: 0 0 0 2.1vw;
     font-size: 3vmin;
 }
-#not-ready, #these-people, #newsletter {
+#sci-stories, #not-ready, #these-people, #newsletter {
+    display: none;
+}
+
+#sci-stories:target, #not-ready:target, #these-people:target, #newsletter:target {
+    display: block;
+}
+
+#sci-stories:target + .page, #not-ready:target + .page, #these-people:target + .page, #newsletter:target + .page {
     display: none;
 }
 

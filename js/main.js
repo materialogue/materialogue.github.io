@@ -10,7 +10,7 @@ function coverCallback2(){
     }, 'slow');
     setTimeout(function () {
         $cover.hide();
-    }, 2000);
+    }, 10);
 }
 
 function coverCallback1(){
@@ -23,15 +23,17 @@ function coverCallback1(){
         'top': dropHeight
     }, 'fast');
 
-    setTimeout(coverCallback2, 2000);
+    setTimeout(coverCallback2, 1000);
 }
 
 // Reveal page
 function coverReveal() {
-    var $cover = $('.cover');
+    var $cover = $('.cover'),
+        titleHeight = $('.page-title').height();
 
+    $cover.css('top', titleHeight);
     $cover.show();
-    setTimeout(coverCallback1, 2000);
+    setTimeout(coverCallback1, 1000);
 }
 
 ////Menu items
