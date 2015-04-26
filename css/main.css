@@ -31,15 +31,15 @@ html {
     position: fixed;
     color: #ffffff;
     z-index: 100;
-    height: 19%
+    height: 5em;
     /*border: 1px solid #000000;*/
 }
 
 .cover {
     position: fixed;
-    top: 18%;
+    top: 0%;
     width: 100%;
-    height: 82%;
+    height: 100%;
     background-color: #000000;
     display: none;
     z-index: 50;
@@ -68,7 +68,6 @@ html {
 /* Navigation */
 .nav-menu {
     position: fixed;
-    opacity: 0.3;
     list-style-type: none;
     background-color: transparent;
     height: 100vh;
@@ -76,14 +75,13 @@ html {
 
 .nav-menu:hover {
     background-color: rgba(0, 0, 0, 0.1);
-    opacity: 1;
 }
 
 
 .menu-item {
     display: block;
-    padding-top: 2.1%;
-    padding-bottom: 2.1%;
+    margin-top: 8.3%;
+    margin-bottom: 8.3%;
     border-left: 4px solid transparent;
 }
 
@@ -104,12 +102,12 @@ html {
 }
 
 .section-title {
-    padding: 2.1vh 0 0 0;
+    margin: 2.1vh 0 2.1vh 1vw;
     font-size: 5vmin;
 }
 
 .section-text {
-    padding: 2.1vh 0 0 2.1vw;
+    margin: 0 0 0 2.1vw;
     font-size: 3vmin;
 }
 #not-ready, #these-people, #newsletter {
@@ -135,28 +133,21 @@ footer {
 
 /* Mailchimp */
 #mc_embed_signup_scroll {
-    padding: 3px;
+    margin: 3px;
 }
 
-input {
-    width: 50vw;
-    height: 4.2vh;
-    font-size: 3vmin;
-}
-
-label {
-    font-family: 'PT Sans Narrow', serif;
-    height: 4.2vh;
+#mce-EMAIL {
+    border: 1px solid black;
 }
 
 .button {
     position: relative;
-    top: 4.1vh;
-    left: 16.6vw;
-    width: 8.3vw;
+    width: 106px;
     background-color: #000000;
     color: #ffffff;
     border: 0px;
+    margin: 2.1% 0 0 0;
+    font-size: 100%;
 }
 
 .button:hover {

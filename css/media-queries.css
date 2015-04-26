@@ -1,0 +1,16 @@
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 2.25em;
+    }
+    .nav-menu  {
+        width: 2.1vw;
+        overflow-x: hidden;
+        font-size: 0.8em;
+    }
+    .menu-item {
+        height: 16.6vh;
+    }
+    .nav-menu h3 {
+        visibility: hidden;
+    }
+}

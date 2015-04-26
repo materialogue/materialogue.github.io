@@ -14,10 +14,13 @@ function coverCallback2(){
 }
 
 function coverCallback1(){
-    var $cover = $('.cover');
+    var $cover = $('.cover'),
+        $titleBar = $('.page-title');
+
+    var dropHeight = $titleBar.height() + 2;
 
     $cover.animate({
-        'top': '20%'
+        'top': dropHeight
     }, 'fast');
 
     setTimeout(coverCallback2, 2000);

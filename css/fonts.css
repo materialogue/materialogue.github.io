@@ -34,11 +34,12 @@
 /* Font styles */
 h1, h2, h3 {
     color: #000000;
+    font-weight: 400;
 }
 
 h1 {
     font-family: 'Source Code Pro', serif;
-    font-size: 15vmin;
+    font-size: 4em;
     color: #ffffff;
 }
 
@@ -48,22 +49,26 @@ h1 span {
 
 h2 {
     font-family: 'PT Sans Narrow', serif;
-    font-size: 7vmin;
+    font-size: 2.25em;
 }
 
 h3 {
     font-family: 'PT Sans Narrow', serif;
-    font-size: 4vmin;
+    font-size: 1.75em;
 }
 
-p {
+p, label, input {
     font-family: 'Lora', serif;
     color: #000000;
+    font-weight: 400;
+    font-size: 1.5em;
 }
 
 a {
     text-decoration: none;
     color: #ff0000;
+    font-weight: 400;
+    font-size: 3vmin;
 }
 
 a:hover {
