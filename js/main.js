@@ -10,7 +10,7 @@ function coverCallback2(){
     }, 'slow');
     setTimeout(function () {
         $cover.hide();
-    }, 10);
+    }, 1000);
 }
 
 function coverCallback1(){
