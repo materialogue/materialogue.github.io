@@ -1,8 +1,8 @@
 @media only screen and (max-width: 600px) {
     @-webkit-keyframes menuDrawer {
         0% {right: 97.9vw;;}
-        25% {right: 25vw;}
-        75% {right: 25vw;}
+        25% {right: 2.1vw;}
+        75% {right: 2.1vw;}
         100% {right: 97.9vw;;}
     }
     .span-2, .span-3 {
@@ -41,25 +41,25 @@
         text-align: center;
     }
     .nav-menu {
-        text-align: center;
-        width: 75vw;
+        text-align: right;
+        width: 100vw;
         right: 97.9vw;
         top: -8.3vh;
         border: 0;
         padding: 0;
-        transition: 0.5s right;
+        transition: 0.5s right ease 0.5s;
         -webkit-animation: menuDrawer 2s 1 3s;
         -webkit-touch-callout: none;
     }
-    .nav-menu:hover, .nav-menu:focus {
+    .nav-menu:hover {
         background-color: transparent;
-        -webkit-animation: menuDrawer 4s 1;
     }
     .nav-menu:active {
-        right: 25vw;
+        right: 2.1vw;
     }
     .menu-item {
         margin-top: 8.3vh;
+        padding-right: 10px;
         background-color: #000000;
     }
     .menu-item:hover {
