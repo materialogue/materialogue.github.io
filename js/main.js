@@ -44,7 +44,7 @@ function menuHover(menuId) {
     var $menuItem = $('#' + menuId),
         $menuItems = $('.menu-item'),
         $menuTarget = $('#' + menuId.split('a-')[1]),
-        $sections = $('.span-10'),
+        $sections = $('.span-9'),
         $currentDisplay = $('.current-display');
 
     //console.log('#' + menuId.split('a-')[1])

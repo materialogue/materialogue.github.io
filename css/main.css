@@ -53,7 +53,7 @@ html {
     text-transform: uppercase;
     font-size: 4vmin;
     color: #ffffff;
-    opacity: 0.3;
+    opacity: 0.6;
 }
 
 
@@ -73,11 +73,6 @@ html {
     height: 100vh;
     z-index: 100;
 }
-
-.nav-menu:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
 
 .menu-item {
     display: block;
@@ -111,7 +106,7 @@ html {
 
 .section-title {
     margin: 2.1vh 0 2.1vh 1vw;
-    font-size: 5vmin;
+    font-size: 4vmin;
 }
 
 .section-text {
@@ -148,17 +143,25 @@ footer {
 }
 
 /* Mailchimp */
+#mc_embed_signup {
+    text-align: center;
+}
+
+.asterisk {
+   color: #ff0000;
+}
+
 #mc_embed_signup_scroll {
     margin: 3px;
 }
 
-#mce-EMAIL {
+#mce-EMAIL, #mce-FNAME, #mce-LNAME {
     border: 1px solid black;
 }
 
 .button {
     position: relative;
-    width: 106px;
+    width: 200px;
     background-color: #000000;
     color: #ffffff;
     border: 0px;
@@ -167,7 +170,6 @@ footer {
 }
 
 .button:hover {
-    width: 8.3vw;
     background-color: #ffffff;
     color: #000000;
 }
