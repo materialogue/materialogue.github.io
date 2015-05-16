@@ -20,12 +20,14 @@
 }
 @font-face {
   font-family: 'PT Sans Narrow';
+  font-family: 'Rokkitt', serif;
   font-style: normal;
   font-weight: 400;
   src: local('PT Sans Narrow'), local('PTSans-Narrow'), url(http://fonts.gstatic.com/s/ptsansnarrow/v7/UyYrYy3ltEffJV9QueSi4UpeNX8RPf6i6WQfJWyCWEs.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Source Code Pro';
+  font-family: 'Rokkitt', serif;
   font-style: normal;
   font-weight: 400;
   src: local('Source Code Pro'), local('SourceCodePro-Regular'), url(http://fonts.gstatic.com/s/sourcecodepro/v6/mrl8jkM18OlOQN8JLgasD9zbP97U9sKh0jjxbPbfOKg.ttf) format('truetype');
@@ -33,12 +35,13 @@
 
 /* Font styles */
 h1, h2, h3 {
+    font-family: 'Rokkitt', serif;
     color: #000000;
     font-weight: 400;
 }
 
 h1 {
-    font-family: 'Source Code Pro', serif;
+    font-family: 'Rokkitt', serif;
     font-size: 4em;
     color: #ffffff;
 }
@@ -48,17 +51,17 @@ h1 span {
 }
 
 h2 {
-    font-family: 'PT Sans Narrow', serif;
+    font-family: 'Rokkitt', serif;
     font-size: 2.25em;
 }
 
 h3 {
-    font-family: 'PT Sans Narrow', serif;
+    font-family: 'Rokkitt', serif; 
     font-size: 1.75em;
 }
 
 p, label, input {
-    font-family: 'Lora', serif;
+    font-family: 'Rokkitt', serif;
     color: #000000;
     font-weight: 400;
     font-size: 1.5em;
