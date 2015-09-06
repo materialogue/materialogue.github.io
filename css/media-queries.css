@@ -1,75 +1,27 @@
-@media only screen and (max-width: 600px) {
-    @-webkit-keyframes menuDrawer {
-        0% {right: 97.9vw;;}
-        25% {right: 2.1vw;}
-        75% {right: 2.1vw;}
-        100% {right: 97.9vw;;}
+@media only screen and (min-width: 600px) {
+    h3 {
+        font-size: 5vw;
     }
-    .span-2, .span-3 {
-        width: 100%;
+    
+    h5 {
+        font-size: 3vw;
     }
-    .bio-block {
-        margin-top: 2.1vh;
-        text-align: left;
+    
+    p {
+        margin-left: 16.67vw;
+        font-size: 3vw;
     }
-    .bio-block a{
-        position: relative;
-        top: -2.1vh;
+    
+    a {
+        font-size: 3vw;
     }
-    h1 {
-        font-size: 2.25em;
+    
+    .bio-img {
+        width: 20vw;
     }
-    .page-title {
-        text-align: center;
-        height: 3em;
-    }
-    .section-title {
-        margin: 0;
-        width: 83.3vw;
-    }
-    .section-text {
-        margin: 0;
-        width: 83.3vw;
-    }
-    footer {
-        height: 2.1vh;
-        font-size: 0.1em;
-        bottom: 0;
-    }
-    .cover p {
-        left: 0;
-        text-align: center;
-    }
-    .nav-menu {
-        text-align: right;
-        width: 100vw;
-        right: 97.9vw;
-        top: -8.3vh;
-        border: 0;
-        padding: 0;
-        transition: 0.5s right ease 0.5s;
-        -webkit-animation: menuDrawer 2s 1 3s;
-        -webkit-touch-callout: none;
-    }
-    .nav-menu:hover {
-        background-color: transparent;
-    }
-    .nav-menu:active {
-        right: 2.1vw;
-    }
-    .menu-item {
-        margin-top: 8.3vh;
-        padding-right: 10px;
-        background-color: #000000;
-    }
-    .menu-item:hover {
-        background-color: #ff0000;
-    }
-    .menu-item h3 {
-        font-size: 6em;
-        color: #ffffff;
-    }
-    .menu-item:hover h3 {
-        color: #ffffff;
+    
+    .bio-img h5 {
+        position: absolute;
+        bottom: 0%;
     }
 }

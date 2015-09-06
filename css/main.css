@@ -1,180 +1,138 @@
-/*
-MATERIALOGUE
-is  Anne Grijzenhout
-    Sonya Hanson
-    Eachan Johnson
-    Jerome Ma
+/* Materialogue CSS */
 
-Sign-up page CSS
-*/
+/* sections */
+section {
+    min-height: 100vh;
+}
 
-/* Reset */
-* {
-    padding: 0px;
-    margin: 0px;
-    border: 0px solid black;
+/* logo floater */
+#logo {
+    position: fixed;
+    left: 0;
+    top: 80vh;
+    color: lightgrey;
+    background-color: transparent;
+    transition: top 0.5s ease, color 0.5s ease;
+    z-index: 2000;
+    overflow: hidden;
+}
+
+#logo.top {
+    top: 0;
+    color: white;
     background-color: transparent;
 }
 
-html, body {
-    width: 100vw;
+#logo.active {
+    left: -80vw;
 }
 
-html {
-    height: 100%;
-}
-
-/* Title */
-.page-title {
-    width: 100%;
-    background-color: #000000;
+/* menu burger */
+#menu-burger {
     position: fixed;
-    color: #ffffff;
-    z-index: 100;
-    height: 5em;
-    /*border: 1px solid #000000;*/
+    right: -10vw;
+    top: 0;
+    width: 10vw;
+    height: 10vw;
+    color: white;
+    z-index: 2000;
+    transition: right 0.5s ease;
 }
 
-.cover {
+#menu-burger h1 {
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+#menu-burger.visible {
+    right: 0;
+}
+
+#menu-burger.active h1 {
+    transform: rotate(90deg);
+}
+
+/* menu */
+#menu {
     position: fixed;
-    top: 0%;
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    display: none;
-    z-index: 50;
+    top: 0;
+    left: 100vw;
+    width: 80vw;
+    height: 100vh;
+    background-color: steelblue;
+    transition: left 1.5s ease;
+    z-index: 1000;
 }
 
-.cover p {
-    font-family: 'Rokkitt', serif;
-    width: 100%;
+#menu.active {
+    left: 20vw;
+}
+
+#menu ul {
+    padding-top: 24vh;
+}
+
+#menu li {
+    display: block;
+    color: white;
+    font-size: 11vmin;
+}
+
+/* title page */
+
+#cover-page {
+    background: url(../img/cover-image2.gif) no-repeat center center fixed;
+    background-size: cover;
+    background-color: black;
+    z-index: 200;
+}
+
+#cover-page h2 {
+    padding-top: 16.67vh;
+    margin-left: 8.3vw;
+    margin-right: 8.3vw;
+    text-align: center;
+    color: lightgrey;
+    z-index: 300;
+}
+
+/* about */
+#about {
+    background-color: lightsteelblue;
+}
+
+/* biography */
+#biog {
+    background-color: lightgray;
+}
+
+.bio-img {
     position: relative;
-    top: 2.1%;
-    left: 50%;
-    text-transform: uppercase;
-    font-size: 4vmin;
-    color: #ffffff;
-    opacity: 0.6;
-}
-
-
-/* Keep in one page */
-.one-page {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
 
+.bio-img img {
+    height: 100%;
+    opacity: 0.5;
+    align-content: center;
+}
 
-/* Navigation */
-.nav-menu {
-    font-family: 'Rokkitt', serif;
-    position: fixed;
-    list-style-type: none;
-    background-color: transparent;
-    height: 100vh;
+.bio-img h5 {
+    position: absolute;
+    left: 0%;
+    top: 75%;
+    width: 100%;
     z-index: 100;
 }
 
-.menu-item {
-    font-family: 'Rokkitt', serif;
-    display: block;
-    margin-top: 8.3%;
-    margin-bottom: 8.3%;
-    border-left: 4px solid transparent;
+.bio-img span {
+    background-color: white;
+    opacity: 0.5;
 }
 
-.hamburger {
-    color: #ff0000;
-    display: block;
-    width: 1.75em;
-    height: 1.75em;
-}
-
-.menu-item:hover {
-    padding-left: 2.1%;
-    border-left: 4px solid #000000;
-    color: #ff0000;
-}
-
-.menu-item:hover h3 {
-    color: #ff0000;
-}
-
-/* Sections */
-.page {
-    position: relative;
-    left: 16.6%;
-}
-
-.section-title {
-    font-family: 'Rokkitt', serif;
-    margin: 2.1vh 0 2.1vh 1vw;
-    font-size: 4vmin;
-}
-
-.section-text {
-    font-family: 'Rokkitt', serif;
-    margin: 0 0 0 2.1vw;
-    font-size: 3vmin;
-}
-#sci-stories, #not-ready, #these-people, #newsletter {
-    display: none;
-}
-
-#sci-stories:target, #not-ready:target, #these-people:target, #newsletter:target {
-    display: block;
-}
-
-#sci-stories:target + .page, #not-ready:target + .page, #these-people:target + .page, #newsletter:target + .page {
-    display: none;
-}
-
-.bio-block {
-    padding: 0px;
-    text-align: center;
-}
-
-.bio-block img {
-    width: 75%;
-}
-
-/* Footer */
-footer {
-    position: fixed;
-    bottom: 0vh;
-    right: 0vw;
-    height: 3vh;
-}
-
-/* Mailchimp */
-#mc_embed_signup {
-    text-align: center;
-}
-
-.asterisk {
-   color: #ff0000;
-}
-
-#mc_embed_signup_scroll {
-    margin: 3px;
-}
-
-#mce-EMAIL, #mce-FNAME, #mce-LNAME {
-    border: 1px solid black;
-}
-
-.button {
-    position: relative;
-    width: 200px;
-    background-color: #000000;
-    color: #ffffff;
-    border: 0px;
-    margin: 2.1% 0 0 0;
-    font-size: 100%;
-}
-
-.button:hover {
-    background-color: #ffffff;
-    color: #000000;
+/* newsletter sign-up */
+#newsletter-signup {
+    background-color: lightsteelblue;
 }
