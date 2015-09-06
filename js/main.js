@@ -11,11 +11,9 @@ function revealMenu () {
 }
 
 function menuHandler () {
-    var $menuBurger = $('#menu-burger'),
-        $menuTitle = $('#menu h1');
+    var $menuBurger = $('#menu-burger');
     
     $menuBurger.click(revealMenu);
-    $menuTitle.click(revealMenu);
 }
 
 function logoShifter () {
@@ -26,7 +24,7 @@ function logoShifter () {
         var scrollTop = $('body').scrollTop(),
             viewPortHeight = $(window).innerHeight();
         
-        console.log('Detected scroll: scrollTop is ' + scrollTop + ' and viewport height is ' + viewPortHeight);
+        //console.log('Detected scroll: scrollTop is ' + scrollTop + ' and viewport height is ' + viewPortHeight);
         
         if ( scrollTop > 0.5 * 0.9167 * viewPortHeight ) {
             $logo.addClass('top');
@@ -38,10 +36,40 @@ function logoShifter () {
     });
 }
 
+function smoothScroll (current, target, speed) {
+    //console.log('Current scrolltop is ' + current + ' and target is ' + target);
+    
+    if ( current + speed < target ) {
+        $('body').scrollTop(current + speed);
+    } else if ( current - speed > target ) {
+        $('body').scrollTop(current - speed);
+    } else {
+         $('body').scrollTop(target);
+        return null;
+    }
+    window.requestAnimationFrame( function () {
+        smoothScroll($('body').scrollTop(), target, speed);
+    });
+}
+
 
 function main () {
     logoShifter();
     menuHandler();
+    
+    var $vid = document.getElementById('cover-vid');
+    
+    setTimeout(function () {
+        $vid.play();
+    }, 3000);
+    
+    $vid.addEventListener('ended', function () {
+        setTimeout(function () {
+            window.requestAnimationFrame( function () {
+                smoothScroll($('body').scrollTop(), $(window).innerHeight(), $(window).innerHeight() / (24 * 1.5));
+            });
+        }, 1000);
+    });
 }
 
 $(document).ready(function () {

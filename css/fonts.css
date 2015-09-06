@@ -13,21 +13,15 @@ h1 {
     font-family: 'Rokkitt', serif;
     font-weight: 400;
     color: white;
+    font-size: 7vh;
+    margin-left: 1vw;
 }
 
-h2, h3, h4, h5 {
+h2, h3, h4, h5, label {
     font-family: 'Mallana', sans-serif;
     font-weight: 400;
     margin-left: 8.33vw;
     margin-right: 8.33vw;
-}
-
-h1 {
-    font-size: 11vw;
-    margin-left: 2vw;
-}
-
-h2 {
     font-size: 10vw;
 }
 
@@ -36,7 +30,7 @@ h3 {
     font-size: 9vw;
 }
 
-h4 {
+h4, label {
     font-size: 8vw;
 }
 
@@ -45,10 +39,10 @@ h5 {
 }
 
 p, li {
-    font-size: 6vw;
+    font-size: 7vw;
     margin-left: 8.33vw;
     margin-right: 8.33vw;
-    margin-top: 2vh;
+    margin-top: 4vh;
 }
 
 a {

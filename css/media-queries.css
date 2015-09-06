@@ -1,4 +1,8 @@
 @media only screen and (min-width: 600px) {
+    video {
+        display: block;
+    }
+    
     h3 {
         font-size: 5vw;
     }
@@ -17,11 +21,22 @@
     }
     
     .bio-img {
-        width: 20vw;
+        width: 35vw;
+        height: 35vw;
+    }
+    
+    .bio-img img {
+        padding-left: 8.3vw;
     }
     
     .bio-img h5 {
         position: absolute;
         bottom: 0%;
+    }
+    
+    .mc-field-group {
+        margin: 2%;
+        width: 45%;
+        float: left;
     }
 }

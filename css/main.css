@@ -1,15 +1,22 @@
 /* Materialogue CSS */
 
+video {
+        display: none;
+    }
+
 /* sections */
 section {
     min-height: 100vh;
+    min-width: 100vw;
+    background-color: transparent;
+    z-index: 100;
 }
 
 /* logo floater */
 #logo {
     position: fixed;
     left: 0;
-    top: 80vh;
+    top: 90vh;
     color: lightgrey;
     background-color: transparent;
     transition: top 0.5s ease, color 0.5s ease;
@@ -23,33 +30,34 @@ section {
     background-color: transparent;
 }
 
-#logo.active {
-    left: -80vw;
-}
-
 /* menu burger */
 #menu-burger {
     position: fixed;
-    right: -10vw;
+    right: -10vh;
     top: 0;
-    width: 10vw;
-    height: 10vw;
+    width: 8vh;
+    height: 8vh;
     color: white;
     z-index: 2000;
-    transition: right 0.5s ease;
+    transition: right 1.5s ease;
+    -webkit-transition: right 1.5s ease;
 }
 
 #menu-burger h1 {
+    margin: 0;
+    font-size: 11vh;
     text-align: center;
     transition: transform 0.5s ease;
+    -webkit-transition: -webkit-transform 1.5s ease;
 }
 
 #menu-burger.visible {
-    right: 0;
+    right: 2vh;
 }
 
 #menu-burger.active h1 {
-    transform: rotate(90deg);
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
 }
 
 /* menu */
@@ -80,29 +88,52 @@ section {
 
 /* title page */
 
+.video-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#cover-vid {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
 #cover-page {
-    background: url(../img/cover-image2.gif) no-repeat center center fixed;
-    background-size: cover;
-    background-color: black;
-    z-index: 200;
+    /*background: url(../img/cover-image2.gif) no-repeat center center fixed;
+    background-size: cover;*/
+    z-index: 0;
 }
 
 #cover-page h2 {
-    padding-top: 16.67vh;
+    position: relative;
+    margin-top: 16.67vh;
     margin-left: 8.3vw;
     margin-right: 8.3vw;
     text-align: center;
-    color: lightgrey;
-    z-index: 300;
+    color: white;
+    opacity: 0.3;
 }
 
 /* about */
 #about {
+    position: relative;
     background-color: lightsteelblue;
 }
 
 /* biography */
 #biog {
+    position: relative;
     background-color: lightgray;
 }
 
@@ -110,12 +141,14 @@ section {
     position: relative;
     width: 100vw;
     height: 100vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
     overflow: hidden;
+    z-index: 200;
 }
 
 .bio-img img {
     height: 100%;
-    opacity: 0.5;
     align-content: center;
 }
 
@@ -124,7 +157,7 @@ section {
     left: 0%;
     top: 75%;
     width: 100%;
-    z-index: 100;
+    margin-left: 8.3vw;
 }
 
 .bio-img span {
@@ -134,5 +167,17 @@ section {
 
 /* newsletter sign-up */
 #newsletter-signup {
+    position: relative;
     background-color: lightsteelblue;
+}
+
+#mc_embed_signup {
+    margin-left: 8.3vw;
+    margin-right: 8.3vw;
+    margin-top: 8.3vh;
+}
+
+#mc_embed_signup .clear {
+    margin-left: 37.5%;
+    width: 25%;
 }
