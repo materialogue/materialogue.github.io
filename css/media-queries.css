@@ -23,10 +23,11 @@
     .bio-img {
         width: 35vw;
         height: 35vw;
+        margin-left: 8.3vw;
     }
     
     .bio-img img {
-        padding-left: 8.3vw;
+        padding-left: 0;
     }
     
     .bio-img h5 {
@@ -38,5 +39,10 @@
         margin: 2%;
         width: 45%;
         float: left;
+    }
+    
+    #mc_embed_signup .clear {
+        margin-left: 37.5%;
+        width: 25%;
     }
 }

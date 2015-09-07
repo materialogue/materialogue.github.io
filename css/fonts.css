@@ -6,7 +6,7 @@
     font-family: 'EB Garamond', serif;
     font-weight: 400;
     color: black;
-    text-shadow: 0;
+    text-shadow: 0 0 0;
 }
 
 h1 {
@@ -39,16 +39,14 @@ h5 {
 }
 
 p, li {
-    font-size: 7vw;
     margin-left: 8.33vw;
     margin-right: 8.33vw;
     margin-top: 4vh;
 }
 
-a {
+a, a:visited, a:hover {
     text-decoration: none;
-    font-size: 5vw;
-    color: black;
+    text-shadow: 0 0 0;
 }
 
 strong {

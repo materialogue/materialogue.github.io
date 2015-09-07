@@ -77,10 +77,10 @@ section {
 }
 
 #menu ul {
-    padding-top: 24vh;
+    padding-top: 16.67vh;
 }
 
-#menu li {
+#menu li, #menu a {
     display: block;
     color: white;
     font-size: 11vmin;
@@ -143,13 +143,13 @@ section {
     height: 100vh;
     margin-top: 4vh;
     margin-bottom: 4vh;
+    margin-left: 0;
     overflow: hidden;
     z-index: 200;
 }
 
 .bio-img img {
     height: 100%;
-    align-content: center;
 }
 
 .bio-img h5 {
@@ -157,7 +157,14 @@ section {
     left: 0%;
     top: 75%;
     width: 100%;
-    margin-left: 8.3vw;
+    margin-left: 0;
+}
+
+.bio-img a, .bio-img a:visited, .bio-img a:hover {
+    color: black;
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    text-decoration: none;
 }
 
 .bio-img span {
@@ -175,9 +182,10 @@ section {
     margin-left: 8.3vw;
     margin-right: 8.3vw;
     margin-top: 8.3vh;
+    padding-bottom: 8.33vh;
 }
 
 #mc_embed_signup .clear {
-    margin-left: 37.5%;
-    width: 25%;
+    margin-left: 12.5%;
+    width: 75%;
 }

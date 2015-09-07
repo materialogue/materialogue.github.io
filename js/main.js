@@ -52,11 +52,23 @@ function smoothScroll (current, target, speed) {
     });
 }
 
-
-function main () {
-    logoShifter();
-    menuHandler();
+function internalLinkHandler () {
+    var $menuLink = $('#menu ul a');
     
+    $menuLink.click(function (event) {
+        var linkTarget = event.target.getAttribute('href'),
+            linkTargetOffset = $(linkTarget).offset().top,
+            currentScrollTop = $('body').scrollTop();
+        
+        console.log('Clicked ' + linkTarget + ', going to ' + linkTargetOffset);
+        
+        revealMenu();
+        
+        smoothScroll(currentScrollTop, linkTargetOffset, Math.abs(currentScrollTop - linkTargetOffset) / (24 * 1.0));
+    });
+}
+
+function vidHandler () {
     var $vid = document.getElementById('cover-vid');
     
     setTimeout(function () {
@@ -64,12 +76,26 @@ function main () {
     }, 3000);
     
     $vid.addEventListener('ended', function () {
-        setTimeout(function () {
-            window.requestAnimationFrame( function () {
-                smoothScroll($('body').scrollTop(), $(window).innerHeight(), $(window).innerHeight() / (24 * 1.5));
-            });
-        }, 1000);
+        var viewportHeight = $(window).innerHeight(),
+            $body = $('body');
+        
+        if ( $body.scrollTop() < viewportHeight ) {
+            setTimeout(function () {
+                window.requestAnimationFrame( function () {
+                    smoothScroll($body.scrollTop(), viewportHeight, viewportHeight / (24 * 1.5));
+                });
+            }, 1000);
+        } else {
+            //
+        }
     });
+}
+
+function main () {
+    logoShifter();
+    menuHandler();
+    vidHandler();
+    internalLinkHandler();
 }
 
 $(document).ready(function () {
