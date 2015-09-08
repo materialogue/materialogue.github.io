@@ -94,7 +94,7 @@ function vidHandler () {
                     vid.play();
                     $vid.show();
                 }
-            });
+            }, 2000);
         }
     }, 5000);
     
