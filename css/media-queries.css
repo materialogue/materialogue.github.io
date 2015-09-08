@@ -13,6 +13,7 @@
     
     p {
         margin-left: 16.67vw;
+        margin-right: 25vw;
         font-size: 3vw;
     }
     
@@ -20,10 +21,20 @@
         font-size: 3vw;
     }
     
+    #menu.margin {
+        left: 94vw;
+    }
+    
+    #menu.active {
+        left: 50vw;
+        opacity: 0.75;
+    }
+
+    
     .bio-img {
-        width: 35vw;
-        height: 35vw;
-        margin-left: 8.3vw;
+        width: 47vw;
+        margin: 0;
+        padding: 0;
     }
     
     .bio-img img {

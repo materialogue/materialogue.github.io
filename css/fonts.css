@@ -5,7 +5,6 @@
 * {
     font-family: 'EB Garamond', serif;
     font-weight: 400;
-    color: black;
     text-shadow: 0 0 0;
 }
 
@@ -20,6 +19,7 @@ h1 {
 h2, h3, h4, h5, label {
     font-family: 'Mallana', sans-serif;
     font-weight: 400;
+    color: white;
     margin-left: 8.33vw;
     margin-right: 8.33vw;
     font-size: 10vw;
@@ -28,6 +28,7 @@ h2, h3, h4, h5, label {
 h3 {
     padding-top: 20vh;
     font-size: 9vw;
+    border-bottom: 1px solid #ECDFBD;
 }
 
 h4, label {
@@ -36,19 +37,27 @@ h4, label {
 
 h5 {
     font-size: 7vw;
+    color: #5e3448
 }
 
-p, li {
+p {
     margin-left: 8.33vw;
     margin-right: 8.33vw;
     margin-top: 4vh;
+    color: #ECDFBD;
 }
 
 a, a:visited, a:hover {
     text-decoration: none;
     text-shadow: 0 0 0;
+    color: #ECDFBD;
 }
 
 strong {
     font-weight: 700;
+    color: #ECDFBD;
+}
+
+label {
+    color: #ECDFBD;
 }

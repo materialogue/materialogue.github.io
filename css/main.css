@@ -1,4 +1,7 @@
 /* Materialogue CSS */
+body {
+    display: block;
+}
 
 video {
         display: none;
@@ -19,15 +22,17 @@ section {
     top: 90vh;
     color: lightgrey;
     background-color: transparent;
-    transition: top 0.5s ease, color 0.5s ease;
+    opacity: 1;
+    transition: top 0.5s ease, color 0.75s ease, opacity 0.75s ease;
     z-index: 2000;
     overflow: hidden;
 }
 
 #logo.top {
     top: 0;
-    color: white;
+    color: #ECDFBD;
     background-color: transparent;
+    opacity: 0.3;
 }
 
 /* menu burger */
@@ -37,18 +42,18 @@ section {
     top: 0;
     width: 8vh;
     height: 8vh;
-    color: white;
+    color: #ECDFBD;
     z-index: 2000;
-    transition: right 1.5s ease;
-    -webkit-transition: right 1.5s ease;
+    transition: right 0.75s ease;
+    -webkit-transition: right 0.75s ease;
 }
 
 #menu-burger h1 {
     margin: 0;
     font-size: 11vh;
     text-align: center;
-    transition: transform 0.5s ease;
-    -webkit-transition: -webkit-transform 1.5s ease;
+    transition: transform 0.75s ease;
+    -webkit-transition: -webkit-transform 0.75s ease;
 }
 
 #menu-burger.visible {
@@ -67,26 +72,50 @@ section {
     left: 100vw;
     width: 80vw;
     height: 100vh;
-    background-color: steelblue;
-    transition: left 1.5s ease;
+    background-color: #20457d;
+    transition: left 0.75s ease, opacity 0.75s ease;
     z-index: 1000;
+    opacity: 1;
+}
+
+#menu.margin {
+    left: 100vw;
 }
 
 #menu.active {
-    left: 20vw;
+    left: 41.67vw;
+    opacity: 0.75;
 }
 
 #menu ul {
     padding-top: 16.67vh;
+    width: 100%;
 }
 
 #menu li, #menu a {
     display: block;
-    color: white;
+    color: #ECDFBD;
     font-size: 11vmin;
+    width: 100%;
+    padding-left: 6vw;
+}
+
+#menu a:hover {
+    opacity: 1;
+    color: #5e3448;
+}
+
+#menu li.viewing, #menu li.viewing a {
+    background-color: #ECDFBD;
+    color: #5e3448;
+    opacity: 1;
 }
 
 /* title page */
+
+video {
+    display: none;
+}
 
 .video-background {
     position: fixed;
@@ -94,8 +123,7 @@ section {
     right: 0;
     bottom: 0;
     left: 0;
-    min-width: 100vw;
-    min-height: 100vh;
+    width: 100vw;
     overflow: hidden;
 }
 
@@ -105,13 +133,13 @@ section {
     right: 0;
     bottom: 0;
     left: 0;
-    min-width: 100vw;
-    min-height: 100vh;
+    width: 100vw;
 }
 
 #cover-page {
-    /*background: url(../img/cover-image2.gif) no-repeat center center fixed;
-    background-size: cover;*/
+    background: url(../img/vid/match.png) no-repeat center center fixed;
+    background-size: cover;
+    background-color: #3b3a35;
     z-index: 0;
 }
 
@@ -121,29 +149,34 @@ section {
     margin-left: 8.3vw;
     margin-right: 8.3vw;
     text-align: center;
-    color: white;
-    opacity: 0.3;
+    color: #ECDFBD;
+    opacity: 0.6;
+    border-bottom: 1px solid #ECDFBD;
 }
 
 /* about */
 #about {
     position: relative;
-    background-color: lightsteelblue;
+    background-color: #fb6648;
 }
 
 /* biography */
 #biog {
     position: relative;
-    background-color: lightgray;
+    background-color: #5e3448;
+}
+
+#biog h3 {
+    padding-bottom: 4vh;
+    border: 0px solid transparent;
 }
 
 .bio-img {
     position: relative;
     width: 100vw;
     height: 100vh;
-    margin-top: 4vh;
-    margin-bottom: 4vh;
-    margin-left: 0;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
     z-index: 200;
 }
@@ -158,10 +191,12 @@ section {
     top: 75%;
     width: 100%;
     margin-left: 0;
+    color: #5e3448;
+    opacity: 1;
 }
 
 .bio-img a, .bio-img a:visited, .bio-img a:hover {
-    color: black;
+    color: #5e3448;
     text-align: left;
     font-family: 'EB Garamond', serif;
     text-decoration: none;
@@ -175,7 +210,7 @@ section {
 /* newsletter sign-up */
 #newsletter-signup {
     position: relative;
-    background-color: lightsteelblue;
+    background-color: #fb6648;
 }
 
 #mc_embed_signup {
@@ -185,7 +220,46 @@ section {
     padding-bottom: 8.33vh;
 }
 
-#mc_embed_signup .clear {
-    margin-left: 12.5%;
+#mc_embed_signup div.ui-input-btn {
     width: 75%;
+    background-color: #ECDFBD;
+    color: #fb6648;
+    border: 0 solid transparent;
+    border-radius: 0;
+    text-shadow: transparent 0 0 0;
+    box-shadow: transparent 0 0 0 0;
 }
+
+#mc_embed_signup div.ui-input-btn:hover {
+    background-color: #fb6648;
+    color: #ECDFBD;
+    border: 1px solid #ECDFBD;
+}
+
+#mc_embed_signup div.indicates-required {
+    font-family: 'EB Garamond', serif;
+    color: #ECDFBD;
+}
+
+.asterisk {
+    font-family: 'EB Garamond', serif;
+    color: #ECDFBD;
+}
+
+#mc_embed_signup input, #mc_embed_signup div.ui-input-text, #mc_embed_signup.ui-input-text input, #mc_embed_signup textarea {
+    background-color : transparent; 
+    border: 0 solid transparent;
+    border-radius: 0;
+    border-bottom: 1px solid #ECDFBD;
+    text-shadow: transparent 0 0 0;
+    font-family: 'EB Garamond', serif;
+    color: #ECDFBD;
+    outline: none;
+    outline-color: transparent;
+    box-shadow: transparent 0 0 0 0;
+}
+
+#mc_embed_signup div.mce_inline_error {
+    background-color : #fb6648; 
+}
+
