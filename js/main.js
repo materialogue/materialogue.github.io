@@ -89,8 +89,12 @@ function vidHandler () {
     setTimeout(function () {
         if ( $(window).innerWidth() > 600 ) {
             vid.currentTime = 1000;
-            vid.play();
-            $vid.show();
+            setInterval(function () {
+                if ( vid.readyState === 4 ) {
+                    vid.play();
+                    $vid.show();
+                }
+            });
         }
     }, 5000);
     
