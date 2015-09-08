@@ -37,7 +37,7 @@ h4, label {
 
 h5 {
     font-size: 7vw;
-    color: #5e3448
+    color: #5e3448;
 }
 
 p {
@@ -49,8 +49,8 @@ p {
 
 a, a:visited, a:hover {
     text-decoration: none;
-    text-shadow: 0 0 0;
-    color: #ECDFBD;
+    text-shadow: transparent 0 0 0;
+    color: #5e3448;
 }
 
 strong {

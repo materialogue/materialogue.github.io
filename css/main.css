@@ -82,6 +82,11 @@ section {
     left: 100vw;
 }
 
+#menu.margin:hover { 
+    left: 50vw;
+    opacity: 0.75;
+}
+
 #menu.active {
     left: 41.67vw;
     opacity: 0.75;
@@ -211,6 +216,17 @@ video {
 #newsletter-signup {
     position: relative;
     background-color: #fb6648;
+}
+
+#newsletter-signup a {
+    text-decoration: underline;
+    text-shadow: transparent 0 0 0;
+    color: #5e3448;
+}
+
+#newsletter-signup a:hover {
+    text-decoration: none;
+    color: #ECDFBD;
 }
 
 #mc_embed_signup {
