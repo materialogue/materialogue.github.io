@@ -83,13 +83,18 @@ function internalLinkHandler () {
 }
 
 function vidHandler () {
-    var $vid = document.getElementById('cover-vid');
+    var vid = document.getElementById('cover-vid'),
+        $vid = $('#cover-vid');
     
     setTimeout(function () {
-        $vid.play();
-    }, 3000);
+        if ( $(window).innerWidth() > 600 ) {
+            vid.currentTime = 1000;
+            vid.play();
+            $vid.show();
+        }
+    }, 5000);
     
-    $vid.addEventListener('ended', function () {
+    vid.addEventListener('ended', function () {
         var viewportHeight = $(window).innerHeight(),
             $body = $('body');
         
@@ -100,7 +105,7 @@ function vidHandler () {
         }
         
         $vid.addEventListener('click', function () {
-            $vid.currentTime = 0;
+            $vid.currentTime = 1000;
             $vid.play();
         });
     });
