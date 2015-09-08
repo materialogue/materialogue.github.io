@@ -1,4 +1,5 @@
 /* Materialogue CSS */
+
 body {
     display: block;
 }
@@ -120,15 +121,20 @@ section {
 
 video {
     display: none;
+    min-height: 100vh;
+    min-width: 100vw;
+    width: auto;
+    height: auto;
 }
 
 .video-background {
     position: fixed;
+    background-color: transparent;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    width: 100vw;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -144,8 +150,16 @@ video {
 #cover-page {
     background: url(../img/vid/match.png) no-repeat center center fixed;
     background-size: cover;
-    background-color: #3b3a35;
-    z-index: 0;
+}
+
+#cover-page img {
+    background: url(../img/vid/match.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    left: -90vw;
+    right: -50vw;
+    z-index: -100;
 }
 
 #cover-page h2 {
@@ -157,6 +171,7 @@ video {
     color: #ECDFBD;
     opacity: 0.6;
     border-bottom: 1px solid #ECDFBD;
+    background-color: transparent;
 }
 
 /* about */
