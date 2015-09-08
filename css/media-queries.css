@@ -25,11 +25,19 @@
         left: 94vw;
     }
     
+    #menu.margin:hover { 
+        left: 50vw;
+        opacity: 0.75;
+    }
+    
     #menu.active {
         left: 50vw;
         opacity: 0.75;
     }
 
+    #cover-page img {
+        display: none;
+    }
     
     .bio-img {
         width: 47vw;

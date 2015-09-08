@@ -83,11 +83,6 @@ section {
     left: 100vw;
 }
 
-#menu.margin:hover { 
-    left: 50vw;
-    opacity: 0.75;
-}
-
 #menu.active {
     left: 41.67vw;
     opacity: 0.75;
