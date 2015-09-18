@@ -48,6 +48,19 @@
         display: none;
     }
     
+    .button:hover {
+        border: 1px solid transparent;
+        transform: translateX(-50%) scale(1.25);
+    }
+    
+    .down-arrow {
+        bottom: 8.3vh;
+    }
+    
+    .down-arrow:hover {
+        bottom: 5vh;;
+    }
+    
     .bio-img {
         width: 47vw;
         margin: 0;

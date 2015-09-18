@@ -66,6 +66,21 @@ function smoothScroll (current, target, speed) {
     });
 }
 
+function downArrowScroll () {
+    var $downArrow = $('#down-arrow-link'),
+        $target = $($downArrow.attr('href')),
+        targetOffset = $target.offset().top;
+    
+    $downArrow.on("click", function () {
+        var scrollTop = $('body').scrollTop(),
+            diff = Math.abs(targetOffset - scrollTop);
+        
+        console.log('Clicked #down-arrow-link with target ' + $downArrow.attr('href') + ', scolling to ' + targetOffset)
+       
+        smoothScroll(scrollTop, targetOffset, diff / 12);
+    });
+}
+
 function internalLinkHandler () {
     var $menuLink = $('#menu ul a');
     
@@ -103,7 +118,7 @@ function vidHandler () {
             $body = $('body');
         
         if ( $body.scrollTop() < 20 ) {
-                smoothScroll($body.scrollTop(), viewportHeight, viewportHeight / (24 * 1.5));
+                //smoothScroll($body.scrollTop(), viewportHeight, viewportHeight / (24 * 1.5));
         } else {
             //
         }
@@ -158,6 +173,7 @@ function main () {
 //    setTimeout(function () {
 //        $('body').fadeIn('slow');
 //    }, 3000);
+    downArrowScroll();
     logoShifter();
     menuHandler();
     vidHandler();
