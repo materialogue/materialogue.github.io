@@ -14,7 +14,11 @@
     p {
         margin-left: 16.67vw;
         margin-right: 25vw;
-        font-size: 3vw;
+        font-size: 2vw;
+    }
+    
+    h3 + p:first-letter {
+        font-size: 4vw;
     }
     
     a {
@@ -25,16 +29,21 @@
         left: 94vw;
     }
     
-    #menu.margin:hover { 
+    /*#menu.margin:hover { 
         left: 50vw;
         opacity: 0.75;
-    }
+    }*/
     
     #menu.active {
         left: 50vw;
         opacity: 0.75;
     }
 
+    #menu-burger {
+        width: 8vh;
+        height: 8vh;
+    }
+    
     #cover-page img {
         display: none;
     }

@@ -1,9 +1,9 @@
 /* Google fonts */
-@import url(https://fonts.googleapis.com/css?family=Rokkitt:400,700|Mallanna|EB+Garamond);
+@import url(https://fonts.googleapis.com/css?family=Rokkitt:400,700|Quicksand:300,400|Nixie+One);
 
 /* Font styles */
 * {
-    font-family: 'EB Garamond', serif;
+    font-family: 'Nixie One', serif;
     font-weight: 400;
     text-shadow: 0 0 0;
 }
@@ -12,39 +12,43 @@ h1 {
     font-family: 'Rokkitt', serif;
     font-weight: 400;
     color: white;
-    font-size: 7vh;
+    font-size: 6.5vh;
     margin-left: 1vw;
 }
 
 h2, h3, h4, h5, label {
-    font-family: 'Mallana', sans-serif;
-    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
     color: white;
     margin-left: 8.33vw;
     margin-right: 8.33vw;
-    font-size: 10vw;
+    font-size: 9vw;
 }
 
 h3 {
     padding-top: 20vh;
-    font-size: 9vw;
-    border-bottom: 1px solid #ECDFBD;
+    font-size: 8vw;
+    border-bottom: 1px solid white;
 }
 
 h4, label {
-    font-size: 8vw;
+    font-size: 7vw;
 }
 
 h5 {
-    font-size: 7vw;
+    font-size: 6vw;
     color: #5e3448;
 }
 
 p {
     margin-left: 8.33vw;
     margin-right: 8.33vw;
-    margin-top: 4vh;
+    margin-top: 3vh;
     color: #ECDFBD;
+}
+
+h3 + p:first-letter {
+    font-size: 3.5vh;
 }
 
 a, a:visited, a:hover {

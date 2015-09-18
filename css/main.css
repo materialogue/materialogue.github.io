@@ -40,13 +40,76 @@ section {
 #menu-burger {
     position: fixed;
     right: -10vh;
-    top: 0;
-    width: 8vh;
-    height: 8vh;
+    top: 2vw;
+    width: 6vh;
+    height: 6vh;
     color: #ECDFBD;
     z-index: 2000;
     transition: right 0.75s ease;
     -webkit-transition: right 0.75s ease;
+}
+
+.hamburger {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hamburger:hover span {
+  transform: rotate(-180deg);
+}
+
+.hamburger span {
+  background-color: white;
+  position: absolute;
+  left: 5%;
+  width: 90%;
+  height: 1px;
+  opacity: 1;
+}
+
+.hamburger span:first-child {
+  top: 50%;
+}
+
+.hamburger span:nth-child(2) {
+  top: 20%;
+}
+
+.hamburger span:nth-child(3) {
+  top: 80%;
+}
+
+.hamburger span:first-child {
+  transition: 0.25s ease;
+}
+
+.hamburger span:nth-child(2) {
+  transform: rotate(0deg);
+  transition: 0.25s ease;
+}
+
+.hamburger span:nth-child(3) {
+  transform: rotate(0deg);
+  transition: 0.25s ease;
+}
+
+.#menu-burger.active span:first-child {
+  transform: rotate(360deg);
+}
+
+#menu-burger.active span:nth-child(2) {
+  width: 50%;
+  left: 53%;
+  top: 33%;
+  transform: rotate(405deg);
+}
+
+#menu-burger.active span:nth-child(3) {
+  width: 50%;
+  left: 53%;
+  top: 67%;
+  transform: rotate(-405deg);
 }
 
 #menu-burger h1 {
@@ -58,7 +121,7 @@ section {
 }
 
 #menu-burger.visible {
-    right: 2vh;
+    right: 0.5vw;
 }
 
 #menu-burger.active h1 {
@@ -173,6 +236,16 @@ video {
 #about {
     position: relative;
     background-color: #fb6648;
+}
+
+.svg-container {
+    width: 25vw;
+    height: 50vh;
+    border: 1px solid white;
+}
+
+path {
+    fill: white;
 }
 
 /* biography */
