@@ -1,0 +1,93 @@
+/* Reset */
+* {
+    position: static;
+    padding: 0px;
+    margin: 0px;
+    border: 0px solid black;
+    background-color: transparent;
+}
+
+html, body {
+    width: 100vw;
+}
+
+html {
+    height: 100%;
+}
+
+/*  SECTIONS  */
+section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1vh 0 1vh 8.3vw;
+}
+.col:first-child { 
+    margin-left: 0; 
+}
+
+/*  GROUPING  */
+.group:before,
+.group:after { 
+    content: ''; 
+    display: table; 
+}
+.group:after { 
+    clear: both;
+}
+.group { 
+    zoom: 1; /* For IE 6/7 */ 
+}
+/*  GRID OF TWELVE  */
+.span_12_of_12 {
+	width: 100vw;
+}
+
+.span_11_of_12 {
+  	width: 90.97vw;
+}
+.span_10_of_12 {
+  	width: 81.95vw;
+}
+
+.span_9_of_12 {
+  	width: 72.92vw;
+}
+
+.span_8_of_12 {
+  	width: 63.9vw;
+}
+
+.span_7_of_12 {
+  	width: 54.87vw;
+}
+
+.span_6_of_12 {
+  	width: 45.85vw;
+}
+
+.span_5_of_12 {
+  	width: 36.82vw;
+}
+
+.span_4_of_12 {
+  	width: 27.8vw;
+}
+
+.span_3_of_12 {
+  	width: 18.77vw;
+}
+
+.span_2_of_12 {
+  	width: 9.75vw;
+}
+
+.span_1_of_12 {
+  	width: 0.724vw;
+}

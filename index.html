@@ -6,151 +6,137 @@ MATERIALOGUE is
     Eachan Johnson
     Jerome Ma
 
-Sign-up page HTML.
+Materialogue home page
 -->
 <html lang="en">
-<head>
+    <head>
 
-    <title>Materialogue | Human stories of the scientific kind</title>
+        <title>Materialogue | Science stories of the human kind</title>
 
-    <!-- Stylesheets -->
-    <link type="text/css"  rel="stylesheet" href="css/fonts.css"/>
-    <link type="text/css" rel="stylesheet" href="css/grid_layout.css" />
-    <link type="text/css" rel="stylesheet" href="css/main.css" />
-    <link type="text/css" rel="stylesheet" href="css/media-queries.css" />
-    <link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
-    <!--<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>-->
+        <!-- Stylesheets -->
+        <link type="text/css"  rel="stylesheet" href="css/jquery.mobile.min.css"/>
+        <link type="text/css"  rel="stylesheet" href="css/fonts.css"/>
+        <link type="text/css" rel="stylesheet" href="css/grid-layout.css" />
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+        <link type="text/css" rel="stylesheet" href="css/media-queries.css" />
+        <!--<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>-->
 
-    <!-- Google Analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-60168273-1', 'auto');
-      ga('send', 'pageview');
-    </script>
+        <!-- Google Analytics -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-60168273-1', 'auto');
+          ga('send', 'pageview');
+        </script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" href="img/M_green.png">
+        <link rel="apple-touch-startup-image" href="img/M_green.png">
+        <meta name="apple-mobile-web-app-title" content="Materialogue">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        
+        <meta name="description" content="Materialogue is new type of popular science reporting, focussing on scientific stories of the human kind.">
+        <meta name="author" content="Anne Grijzenhout">
+        <meta name="author" content="Sonya Hanson">
+        <meta name="author" content="Eachan Johnson">
+        <meta name="author" content="Jerome Ma">
 
-    <meta content="charset=UTF-8" />
+        <!-- Twitter cards -->
+        <meta name="twitter:card" content="summary" />
+        <meta property="twitter:site" content="@materialogue" />
+        <meta property="twitter:creator" content="@materialogue" />
 
-    <meta name="description" content="Materialogue is new type of popular science reporting, focussing on scientific stories of the human kind." />
-    <meta name="author" content="Anne Grijzenhout, Sonya Hanson, Eachan Johnson, Jerome Ma" />
+        <!-- Open graph (Facebook) -->
+        <meta property="og:title" content="Materialogue | Science stories of the human kind" />
+        <!--<meta property="og:image" content="img/logo_white_site.svg" />-->
+        <meta property="og:description" content="Materialogue is new type of popular science reporting, focussing on scientific stories of the human kind." />
 
-    <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary" />
-    <meta property="twitter:site" content="@materialogue" />
-    <meta property="twitter:creator" content="@materialogue" />
+    </head>
 
-    <!-- Open graph (Facebook) -->
-    <meta property="og:title" content="Materialogue | Human stories of the scientific kind" />
-    <!--<meta property="og:image" content="img/logo_white_site.svg" />-->
-    <meta property="og:description" content="Materialogue is new type of popular science reporting, focussing on scientific stories of the human kind." />
+    <body>
+        
+        <div id="logo">
+            <h1>Materialogue.</h1>
+        </div>
+        
+        <div id="menu-burger">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
 
-</head>
-
-<body id="home" ontouchstart="">
-
-    <!-- Splash screen -->
-    <div class="cover"><p>Science stories of the human kind</p></div>
-    <div class="section group nav">
-           <div class="col span-3">
-            <ul class="nav-menu">
-                <div class="head-space-3"></div>
-                <li class="menu-item" id="a-sci-stories">
-                    <a href="#sci-stories"><h3>About</h3></a>
-                </li>
-                <!--<li class="menu-item" id="a-not-ready">
-                    <h3>is <em>not ready yet</em></h3>
-                </li>-->
-                <li class="menu-item" id="a-these-people">
-                    <a href="#these-people"><h3>Contact</h3></a>
-                </li>
-                <li class="menu-item" id="a-newsletter">
-                    <a href="#newsletter"><h3>Newsletter</h3></a>
-                </li>
+        <div id="menu">
+            <ul>
+                <li id='#a-cover-page'><a href="#cover-page">Home</a></li>
+                <li id='#a-about'><a href="#about">About</a></li>
+                <li id='#a-biog'><a href="#biog">Contact</a></li>
+                <li id='#a-newsletter-signup'><a href="#newsletter-signup">News</a></li>
             </ul>
         </div>
-    </div>
-    <div class="section group content">
-            <div class="page-title">
-                <h1>Materialogue.</h1>
+        
+        <section id="cover-page" class="group full-screen">
+            <div class="video-background">
+                <video muted autoplay id="cover-vid" poster="img/vid/match.png">
+                    <source src="img/vid/match.webm" type="video/webm">
+                    <source src="img/vid/match.m4v" type="video/m4v">
+                    <source src="img/vid/match.mp4" type="video/mp4">
+                    <source src="img/vid/match.wmv" type="video/wmv">
+                </video>
+                <img src="img/vid/match.png" />
             </div>
-        <div class="span-2 col"></div>
-        <div class="span-9 col page" id="sci-stories">
-            <div class="head-space-2"></div>
-            <div class="section-title">
-                <h2>Science stories of the human kind.</h2>
-            </div>
-            <div class="section-text">
-                <p class="abstract">
-                    We're interested in the interplay between science and the humans that are involved in science's realm.
-                </p>
-
-                <p>
-                    What is it like to be involved in scientific research and how does science shape scientists' experience? And how do the human aspects of scientific
-                    research shape the outcomes? How can research be visualised and reach a large audience?
-                </p>
-            </div>
-        </div>
-
-        <!--<div class="span-10 col page" id="not-ready">
-            <div class="head-space-3"></div>
-            <div class="section-title">
-                <h2>Worth the wait. In gold.</h2>
-            </div>
-            <div class="section-text">
-                <p>Blah2.</p>
-            </div>
-        </div>-->
-        <div class="span-9 col page" id="these-people">
-            <div class="head-space-2"></div>
-            <div class="section-title">
-                <h2>Monkeys on typewriters.</h2>
-            </div>
-                <div class="section group bio-block">
-                    <div class="col span-3">
-                        <img alt-text="Anne Grijzenhout" src="img/ag_bio.gif" />
-                        <h2>Anne Grijzenhout</h2>
-                        <p><a href="//twitter.com/annegrijzenhout">@annegrijzenhout</a></p>
-                    </div>
-                    <div class="col span-3">
-                        <img alt-text="Sonya Hanson" src="img/sh_bio.gif" />
-                        <h2>Sonya Hanson</h2>
-                        <p><a href="//twitter.com/sonyahans">@sonyahans</a></p>
-                    </div>
-                    <div class="col span-3">
-                        <img alt-text="Eachan Johnson" src="img/ej_bio.gif" />
-                        <h2>Eachan Johnson</h2>
-                        <p><a href="//twitter.com/eachanjohnson">@eachanjohnson</a></p>
-                    </div>
-                    <div class="col span-3">
-                        <img alt-text="Jerome Ma" src="img/jm_bio.gif" />
-                        <h2>Jerome Ma</h2>
-                        <p><a href="//twitter.com/ma_jerome">@ma_jerome</a></p>
-                    </div>
+            <h2>Science stories of the human kind</h2>
+            <a href="mailto:contact@materialogue.com">
+                <div class="button">Submit story idea</div>
+            </a>
+            <a href="#about" id="down-arrow-link">
+                <div class="down-arrow"></div>
+            </a>
+        </section>
+        
+        <section id="about" class="group">
+            <h3>We tell science's human story.</h3>
+            <p>The search for knowledge is a human pursuit: flawed, noble, exhilarating. Materialogue doesn't report on scientists, only people.</p>
+        </section>
+        
+        <section id="biog" class="group">
+            <h3>Monkeys on typewriters.</h3>
+                <div class="col span_12_of_12 bio-img">
+                    <h5><span>Anne Grijzenhout<br>
+                        <a href="//twitter.com/annegrijzenhout">@annegrijzenhout</a></span></h5>
+                    <img alt-text="Anne Grijzenhout" src="img/ag_bio.gif" />
                 </div>
-        </div>
-        <div class="col span-9 page" id="newsletter">
-            <div class="head-space-2"></div>
-            <div class="section-title">
-                <h2>Stay in touch.</h2>
-            </div>
-            <div class="section-text">
-                <p>
-<!-- Begin MailChimp Signup Form -->
-<!--<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>-->
+                <div class="col span_12_of_12 bio-img">
+                    <h5><span>Sonya Hanson<br>
+                        <a href="//twitter.com/sonyahans">@sonyahans</a></span></h5>
+                    <img alt-text="Sonya Hanson" src="img/sh_bio.gif" />
+                </div>
+                <div class="col span_12_of_12 bio-img">
+                    <h5><span>Eachan Johnson<br>
+                        <a href="//twitter.com/eachanjohnson">@eachanjohnson</a></span></h5>
+                    <img alt-text="Eachan Johnson" src="img/ej_bio.gif" />
+                </div>
+                <div class="col span_12_of_12 bio-img">
+                    <h5><span>Jerome Ma<br>
+                        <a href="//twitter.com/ma_jerome">@ma_jerome</a></span></h5>
+                    <img alt-text="Jerome Ma" src="img/jm_bio.gif" />
+                </div>
+        </section>
+        
+        <section id="newsletter-signup" class="">
+            <h3>Stay up to date.</h3>
+            <p>Check out our news <a target="_blank" href="http://us10.campaign-archive2.com/?u=e6dfcf5eafeaf437d93da9036&id=e2323dc73e">archive</a> and sign up for future updates.</p>
+            <!-- Begin MailChimp Signup Form -->
                 <div id="mc_embed_signup">
                     <form action="//materialogue.us10.list-manage.com/subscribe/post?u=e6dfcf5eafeaf437d93da9036&amp;id=b7d4861693" method="post"
                           id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -178,7 +164,9 @@ Sign-up page HTML.
                         <div style="position: absolute; left: -5000px;">
                             <input type="text" name="b_e6dfcf5eafeaf437d93da9036_b7d4861693" tabindex="-1" value="">
                         </div>
-                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        <div class="clear">
+                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -193,20 +181,12 @@ Sign-up page HTML.
                     var $mcj = jQuery.noConflict(true);
                 </script>
                 <!--End mc_embed_signup-->
-                <p>Check out our <a target="_blank" href="http://us10.campaign-archive2.com/?u=e6dfcf5eafeaf437d93da9036&id=e2323dc73e">archive</a>!</p>
-            </div>
-        </div>
-   </div>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2015 Materialogue.</p>
-    </footer>
+        <!-- Scripts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.mobile.min.js"></script>
+        <script src="js/main.js"></script>
 
-    <!-- Scripts -->
-    <script src="js/jquery-2.1.3.min.js"></script>
-    <!--<script async src="js/bootstrap.min.js"></script>-->
-    <script src="js/main.js"></script>
-
-</body>
+    </body>
 </html>

@@ -1,87 +1,67 @@
 /* Google fonts */
-
-@font-face {
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lora'), local('Lora-Regular'), url(http://fonts.gstatic.com/s/lora/v9/4A-myfZX6oDr9CtSTkTGig.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lora Bold'), local('Lora-Bold'), url(http://fonts.gstatic.com/s/lora/v9/rapsGf8n-DpRu9kcmAAciA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Lora';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lora Italic'), local('Lora-Italic'), url(http://fonts.gstatic.com/s/lora/v9/DeoOq1kX9ExfArSHppos_g.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'PT Sans Narrow';
-  font-family: 'Rokkitt', serif;
-  font-style: normal;
-  font-weight: 400;
-  src: local('PT Sans Narrow'), local('PTSans-Narrow'), url(http://fonts.gstatic.com/s/ptsansnarrow/v7/UyYrYy3ltEffJV9QueSi4UpeNX8RPf6i6WQfJWyCWEs.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Source Code Pro';
-  font-family: 'Rokkitt', serif;
-  font-style: normal;
-  font-weight: 400;
-  src: local('Source Code Pro'), local('SourceCodePro-Regular'), url(http://fonts.gstatic.com/s/sourcecodepro/v6/mrl8jkM18OlOQN8JLgasD9zbP97U9sKh0jjxbPbfOKg.ttf) format('truetype');
-}
+@import url(https://fonts.googleapis.com/css?family=Rokkitt:400,700|Quicksand:300,400|Nixie+One);
 
 /* Font styles */
-h1, h2, h3 {
-    font-family: 'Rokkitt', serif;
-    color: #000000;
+* {
+    font-family: 'Nixie One', serif;
     font-weight: 400;
+    text-shadow: 0 0 0;
 }
 
 h1 {
     font-family: 'Rokkitt', serif;
-    font-size: 4em;
-    color: #ffffff;
+    font-weight: 400;
+    color: white;
+    font-size: 6.5vh;
+    margin-left: 1vw;
 }
 
-h1 span {
-    font-size: 7vmin;
-}
-
-h2 {
-    font-family: 'Rokkitt', serif;
-    font-size: 2.25em;
+h2, h3, h4, h5, label {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    color: white;
+    margin-left: 8.33vw;
+    margin-right: 8.33vw;
+    font-size: 9vw;
 }
 
 h3 {
-    font-family: 'Rokkitt', serif;
-    font-size: 1.75em;
+    padding-top: 20vh;
+    font-size: 8vw;
+    border-bottom: 1px solid white;
 }
 
-p, label, input {
-    font-family: 'Rokkitt', serif;
-    color: #000000;
-    font-weight: 400;
-    font-size: 1.5em;
+h4, label {
+    font-size: 7vw;
 }
 
-a {
+h5 {
+    font-size: 6vw;
+    color: #5e3448;
+}
+
+p {
+    margin-left: 8.33vw;
+    margin-right: 8.33vw;
+    margin-top: 3vh;
+    color: #ECDFBD;
+}
+
+h3 + p:first-letter {
+    font-size: 3.5vh;
+}
+
+a, a:visited, a:hover {
     text-decoration: none;
-    color: #ff0000;
-    font-weight: 400;
+    text-shadow: transparent 0 0 0;
+    color: #5e3448;
 }
 
-.menu-item a {
-  font-size: 3vmin;
+strong {
+    font-weight: 700;
+    color: #ECDFBD;
 }
 
-a:hover {
-    color: #000000;
-}
-
-.abstract {
-  color: #ff0000;
-  opacity: 0.4;
+label {
+    color: #ECDFBD;
 }
